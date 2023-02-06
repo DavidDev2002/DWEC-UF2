@@ -3,9 +3,23 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script type="text/javascript" src="javascript.js"></script>
+
+<!--Decir el nombre de una tarea el numero de horas totales que necesitaras con las horas que quieres dedicar cada semana y que te diga que dia acabaras tu tarea-->
+<!--Poder introducir la fecha de inicio del objetivo-->
+<!--Poder introducir dias festivos donde NO cuentasn las horas-->
     </head>
     <body>
-        <h2>Horas que le quieres dedicar a la semana:</h2>
+
+        <h2>Calendario de objetivo:</h2>
+
+        <form>
+            <label>Nombre de la tarea:</label>
+            <input type="text" id="taskName"><br><br>
+            <label>Horas totales para cumplir la tarea:</label>
+            <input type="number" id="totalHours"><br><br>
+          </form>
+
+        
         <form name="formulario" method="post">
             <table>
                 <tr>

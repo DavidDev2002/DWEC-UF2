@@ -21,4 +21,19 @@ function store(){
 
     var sunday = document.getElementById("domingo");
     localStorage.setItem("horas_domingo", sunday.value);
+
+    var horas_semanales = parseInt(monday.value) + parseInt(tuesday.value) + parseInt(wednesday.value) + parseInt(thursday.value) + parseInt(friday.value) + parseInt(saturday.value) + parseInt(sunday.value);
+    localStorage.setItem("horas_semanales", horas_semanales);
+
+    const tarea_nombre = document.getElementById("taskName").value;
+    const totalHours = document.getElementById("totalHours").value;
+    const weeksNeeded = totalHours / horas_semanales;
+    
+    const fechafinal = new Date();
+    fechafinal.setDate(fechafinal.getDate() + (weeksNeeded * 7));
+    
+    const result = `La tarea "${tarea_nombre}" terminara el ${fechafinal.toDateString()}.`;
+    console.log(result);
   }
+
+
