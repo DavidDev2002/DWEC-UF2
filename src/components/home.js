@@ -4,6 +4,10 @@ import { useEffect, useState } from 'react';
 function App() {
   const [objetivos, setObjetivos] = useState([]);
   const day = new Date().toLocaleDateString();
+
+  useEffect(() => {
+    comprobarFechaFinal();
+  }, []);
   
   const activeTasks = [
     { id: 1, name: 'Tarea 1'},
@@ -49,7 +53,7 @@ function App() {
   return (
     <div onLoad={comprobarFechaFinal}>
       <h1>Dia de hoy: {day}</h1>
-      <button onClick={comprobarFechaFinal}>Comprobar si tienes Tareas cerca de terminar</button>
+      <button>Comprobar si tienes Tareas cerca de terminar</button>
     </div>
   );
 }
