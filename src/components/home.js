@@ -53,7 +53,6 @@ function App() {
   return (
     <div onLoad={comprobarFechaFinal}>
       <h1>Dia de hoy: {day}</h1>
-      <button>Comprobar si tienes Tareas cerca de terminar</button>
     </div>
   );
 }

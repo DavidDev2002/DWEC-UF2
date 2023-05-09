@@ -31,9 +31,6 @@ function App() {
           <li>
             <NavLink to="/edit-objective">Edit Objective</NavLink>
           </li>
-          <li>
-          <NavLink to="/extra">Extra</NavLink>
-          </li>
         </ul>
       </nav>
       <Routes>
