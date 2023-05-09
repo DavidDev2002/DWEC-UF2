@@ -35,7 +35,7 @@ function Extra() {
 
 
     return (
-        <div onLoad={comprobarFechaFinal}>
+        <div>
             <h2>Lista de objetivos</h2>
             <ul>
                 {objetivos.map((objetivo) => (
@@ -46,7 +46,7 @@ function Extra() {
                         <br></br>
                         <span> Fecha Final: {objetivo.fechaFinalizacion}</span>
                         <span></span>
-                        <button onClick={comprobarFechaFinal}>Eskeler</button>
+                        <button  onClick={comprobarFechaFinal}>Eskeler</button>
                     </li>
 
                 ))}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
+import React, { useEffect } from 'react';
 
 function NewObjective() {
   const [nombre, setNombre] = useState("");
@@ -10,6 +11,7 @@ function NewObjective() {
   const [fechaInicio, setFechaInicio] = useState(new Date().toISOString().substring(0, 10));
   const [diasNoDisponibles, setDiasNoDisponibles] = useState([]);
   const [fechaFinal, setFechaFinal] = useState("");
+   
 
   const handleNombreChange = (event) => {
     setNombre(event.target.value);
